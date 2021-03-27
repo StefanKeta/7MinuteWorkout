@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="10dp"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Are you sure?"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_marginTop="10dp"
+        android:text="This will stop your workout. You've come so far, are you sure you want to quit?"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/custom_dialog_box_yes_btn"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="Yes"
+            android:layout_marginEnd="10dp"
+            android:padding="8dp"
+            android:textColor="@android:color/white"
+            android:background="@color/colorAccent"
+            tools:ignore="ButtonStyle" />
+
+
+        <Button
+            android:id="@+id/custom_dialog_box_no_btn"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="No"
+            android:textColor="@android:color/white"
+            android:background="@color/colorAccent"
+            android:padding="8dp"
+            android:layout_marginStart="10dp"
+            tools:ignore="ButtonStyle" />
+    </LinearLayout>
+
+</LinearLayout>
